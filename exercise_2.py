@@ -21,15 +21,15 @@ class Dog():
         else:
             return f"it is a tie between {self.name} and {other_dog.name}"
     
+if __name__ == "__main__":
+    dog_1 = Dog("Spike", 4, 18)
+    dog_2 = Dog("Sizar", 2, 17)
+    dog_3 = Dog("Bogi", 3, 15)
+    other_dog = Dog("Victor", 2, 16)
 
-dog_1 = Dog("Spike", 4, 18)
-dog_2 = Dog("Sizar", 2, 17)
-dog_3 = Dog("Bogi", 3, 15)
-other_dog = Dog("Victor", 2, 16)
+    Dogs = [dog_1, dog_2, dog_3]
 
-Dogs = [dog_1, dog_2, dog_3]
-
-for dog in Dogs:
-    print(dog.bark())
-    dog.run_speed()
-    print(dog.fight(other_dog))
+    for dog in Dogs:
+        print(dog.bark())
+        dog.run_speed()
+        print(dog.fight(other_dog))
