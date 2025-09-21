@@ -24,10 +24,11 @@ class Family():
         for member in self.members:
             print(f" -{member['name']}, {member['age']} years old , {member['gender']}")
 
-my_family = Family("Spartacs", [
+if __name__ == "__main__":
+    my_family = Family("Spartacs", [
     {'name': 'Michael', 'age': 35, 'gender': 'Male', 'is_child': False},
     {'name': 'Sarah', 'age': 32, 'gender': 'Female', 'is_child': False}
-])
-my_family.born(name = 'Issam', age = 4, gender = 'Male', is_child = True)
-print(my_family.is_18('Issam'))
-my_family.family_presentation()
+    ])
+    my_family.born(name = 'Issam', age = 4, gender = 'Male', is_child = True)
+    print(my_family.is_18('Issam'))
+    my_family.family_presentation()
